@@ -9,28 +9,45 @@
     <title>resume-3.html</title>
   </head>
   <body>
-    <nav>
-      <span class="logo">TM</span>
-      <ul class="nav-list">
-        <li>Projects</li>
-        <li>About</li>
-        <li>Contacts</li>
-      </ul>
-    </nav>
     <header>
+      <nav>
+        <span class="logo">TM</span>
+        <ul class="nav-list">
+          <li><span>01.</span> About</li>
+          <li><span>02.</span> Projects</li>
+          <li><span>03.</span> Contacts</li>
+        </ul>
+      </nav>
       <div class="banner-text">
-        <p>Hi, my name is</p>
-        <h1>Tirelo Mputle.</h1>
-        <p>I'm a web developer.</p>
-        <p>
-          A short description of what I do and what I'm currently focused on.
+        <p class="intro">Hi, my name is</p>
+        <h1 class="banner-heading">Tirelo Mputle.</h1>
+        <p class="banner-heading second-heading">I'm a web developer.</p>
+        <p class="short-summary">
+          I build websites using HTML and CSS. Currently taking part in a 1 year
+          software developer bootcamp with
+          <a href="https://www.codespace.co.za/programs/software-development/"
+            >CodeSpace</a
+          >.
         </p>
+        <a href="#projects" class="projects-link">Checkout my projects</a>
       </div>
-      <a href="#projects" class="projects-link">Checkout my projects</a>
     </header>
-    <section>
-      <!-- Aside section, containing image and page section links -->
-      <aside>
+
+    <section class="about-me centered-sections">
+      <header class="section-heading">
+        <h2><span>01. </span>About me</h2>
+      </header>
+      <div class="about-me-content">
+        <div class="about-me-text">
+          <p>Something interesting about myself.</p>
+          <div class="technologies">
+            <p>These are the technologies I'm currently using:</p>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+            </ul>
+          </div>
+        </div>
         <img
           src="images/Tirelo-profile-image.jpg"
           alt="Tirelo Mputle"
@@ -38,6 +55,18 @@
           width="200px"
           height="200px"
         />
+      </div>
+    </section>
+
+    <section class="projects centered-sections" id="projects">
+      <header class="section-heading">
+        <h2><span>02. </span>Projects</h2>
+      </header>
+    </section>
+
+    <section>
+      <!-- Aside section, containing image and page section links -->
+      <aside>
         <!-- Links linked to page section titles using ids -->
         <ul>
           <li><a href="#education">Education</a></li>
