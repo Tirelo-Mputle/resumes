@@ -6,7 +6,7 @@ light-blue: #3FA194 */
 
 /* CENTERED SECTIONS */
 .centered-sections {
-  padding: 0 5%;
+  padding: 0 5% 5rem;
 }
 /* SECTION HEADINGS */
 .section-heading {
@@ -105,4 +105,16 @@ nav {
 }
 .about-me-content img {
   border-radius: 0.5rem;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: rgb(3, 0, 31);
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+footer p {
+  color: #ccd6f6;
 }
