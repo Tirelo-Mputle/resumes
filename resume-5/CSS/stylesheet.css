@@ -6,7 +6,10 @@ light-blue: #3FA194 */
 
 /* CENTERED SECTIONS */
 .centered-sections {
-  padding: 0 5% 5rem;
+  /* padding: 0 10% 5rem; */
+  width: 60%;
+  margin: 0 auto;
+  border: 1px solid red;
 }
 /* SECTION HEADINGS */
 .section-heading {
@@ -29,15 +32,12 @@ body {
   background-color: #0a192f;
 }
 /* HEADER SECTION */
-header {
-  padding: 0 5% 10rem;
-}
 
 /* nav bar */
 nav {
   display: flex;
   justify-content: space-between;
-
+  margin: 0 5%;
   align-items: center;
 }
 
