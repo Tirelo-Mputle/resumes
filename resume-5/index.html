@@ -4,14 +4,36 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/stylesheet.css" />
+    <!-- Favicon links -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <!-- End of favicon links -->
     <link rel="stylesheet" type="text/css" href="CSS/stylesheet.css" />
+    <!-- Font awesome kit -->
+    <script
+      src="https://kit.fontawesome.com/b614e5aac1.js"
+      crossorigin="anonymous"
+    ></script>
     <title>resume-5.html</title>
   </head>
   <body>
     <!-- Navigation bar -->
     <nav>
-      <span class="logo">TM</span>
+      <span
+        ><img src="images/icons/favicon-32x32.png" alt="Logo" class="logo"
+      /></span>
       <!-- Navigation bar links that lead to section on the page -->
       <ul class="nav-list">
         <li>
@@ -76,14 +98,42 @@
           />
         </div>
       </section>
+
       <!-- Projects section -->
       <section class="projects centered-sections" id="projects">
         <!-- Projects heading -->
         <header class="section-heading">
           <h2><span>02. </span>Projects</h2>
         </header>
+
+        <article class="project-container">
+          <div class="project-image-container">
+            <img
+              src="images/projects/project-1-personal-website.png"
+              alt="Personal website image"
+              class="project-image"
+            />
+          </div>
+          <div class="project-description-container">
+            <p class="featured-project">Featured Project</p>
+            <p class="project-name">Personal Portfolio</p>
+            <p class="project-description">
+              A digital resume that details information about me, the projects
+              I've worked on and my contact details.
+            </p>
+            <ul class="project-technologies-list">
+              <li class="project-technology">HTML</li>
+              <li class="project-technology">CSS</li>
+            </ul>
+            <div class="project-icons">
+              <i class="fa-brands fa-github project-icon"></i>
+              <i class="fa-solid fa-up-right-from-square project-icon"></i>
+            </div>
+          </div>
+        </article>
       </section>
     </main>
+
     <footer>
       <p>Built by Tirelo Mputle</p>
     </footer>
