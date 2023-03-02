@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon links -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/icons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+    <!-- End of favicon links -->
+    <link rel="stylesheet" type="text/css" href="CSS/stylesheet.css" />
+    <!-- Font awesome kit -->
+    <script
+      src="https://kit.fontawesome.com/b614e5aac1.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>resume-5.html</title>
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <nav>
+      <span
+        ><img src="images/icons/favicon-32x32.png" alt="Logo" class="logo"
+      /></span>
+      <!-- Navigation bar links that lead to section on the page -->
+      <ul class="nav-list">
+        <li>
+          <a href="#about">01.About</a>
+        </li>
+        <li>
+          <a href="#projects">02.Projects</a>
+        </li>
+        <li>
+          <a href="#contacts">03.Contacts</a>
+        </li>
+      </ul>
+    </nav>
+    <header class="centered-sections">
+      <!-- Banner information -->
+      <div class="banner-text">
+        <p class="intro">Hi, my name is</p>
+        <h1 class="banner-heading">Tirelo Mputle.</h1>
+        <p class="banner-heading second-heading">I'm a web developer.</p>
+        <p class="short-summary">
+          I build websites using HTML and CSS. Currently taking part in a 1 year
+          software developer bootcamp with
+          <a
+            href="https://www.codespace.co.za/programs/software-development/"
+            target="_blank"
+            >CodeSpace</a
+          >.
+        </p>
+        <!-- "Button" linking to projects section -->
+        <a href="#projects" class="projects-link">Checkout my projects</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- About me section -->
+      <section class="about-me centered-sections" id="about">
+        <!-- About me heading styled with section-heading class -->
+        <div class="section-heading">
+          <h2><span>01. </span>About me</h2>
+        </div>
+        <!-- Main about me content -->
+        <div class="about-me-content">
+          <div class="about-me-text">
+            <p class="more-about-me">Something interesting about myself.</p>
+            <div class="technologies">
+              <p>These are the technologies I'm currently using:</p>
+              <!-- List of technologies I'm using.  -->
+              <!-- Need to add triangle icon  -->
+              <ul>
+                <li><i class="fa-solid fa-caret-right about-icon"></i>HTML</li>
+                <li><i class="fa-solid fa-caret-right about-icon"></i>CSS</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Personal profile image -->
+          <img
+            src="images/Tirelo-profile-image.jpg"
+            alt="Tirelo Mputle"
+            class="about-image"
+          />
+        </div>
+      </section>
+
+      <!-- Projects section -->
+      <section class="projects centered-sections" id="projects">
+        <!-- Projects heading -->
+        <div class="section-heading">
+          <h2><span>02. </span>Projects</h2>
+        </div>
+
+        <article class="project-container">
+          <div class="project-image-container">
+            <img
+              src="images/projects/project-1-personal-website.png"
+              alt="Personal website image"
+              class="project-image"
+            />
+          </div>
+          <div class="project-description-container">
+            <p class="featured-project">Featured Project</p>
+            <p class="project-name">Personal Portfolio</p>
+            <p class="project-description">
+              A digital resume that details information about me, the projects
+              I've worked on and my <a href="#contacts">contact details</a>.
+            </p>
+            <ul class="project-technologies-list">
+              <li class="project-technology">HTML</li>
+              <li class="project-technology">CSS</li>
+            </ul>
+            <div class="project-icons">
+              <a
+                href="https://github.com/Tirelo-Mputle/resumes/tree/main/resume-5"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github project-icon"></i
+              ></a>
+
+              <i class="fa-solid fa-up-right-from-square project-icon"></i>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="contacts centered-sections" id="contacts">
+        <div class="section-heading">
+          <h2><span>03. </span>Contacts</h2>
+        </div>
+
+        <div class="contacts-text">
+          <h2>Get In Touch</h2>
+          <div class="contact-info-container">
+            <p><i class="fa-regular fa-envelope"></i>tirelomputle0@gmail.com</p>
+            <p><i class="fa-solid fa-mobile-screen-button"></i>0676617468</p>
+          </div>
+
+          <a href="https://za.linkedin.com/" target="_blank" class="linkedIn"
+            >Say hello on LinkedIn
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <ul class="footer-socials">
+        <li>
+          <a href="https://za.linkedin.com/" target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://github.com/Tirelo-Mputle/resumes/tree/main/resume-5"
+            target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+        </li>
+      </ul>
+      <p>Built by Tirelo Mputle</p>
+    </footer>
+  </body>
+</html>
