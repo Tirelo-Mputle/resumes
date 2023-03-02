@@ -57,11 +57,11 @@ a {
 nav {
   display: flex;
   justify-content: space-between;
-  margin: 2rem 5% 0;
   align-items: center;
   position: sticky;
   top: 0;
-  background-color: #071429;
+  padding: 0.7rem 2rem;
+  background-color: #0d1d36;
   z-index: 2;
 }
 
@@ -84,13 +84,17 @@ nav {
 .nav-list a:hover {
   color: #3fa194;
 }
-
+.back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  color: #ccd6f6;
+  font-size: 1.5rem;
+}
 /* End of nav bar */
 
 /* HEADER SECTION */
-header {
-  height: 100vh;
-}
+
 /* banner text */
 .banner-text {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
