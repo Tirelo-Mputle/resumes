@@ -22,17 +22,23 @@ li {
   list-style: none;
 }
 
+a {
+  color: #3fa194;
+  text-decoration: none;
+}
+
 /* Reusable page-wide classes */
 /* CENTERED SECTIONS */
 .centered-sections {
   padding-bottom: 10rem;
   width: 80%;
   margin: 0 auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 /* SECTION HEADINGS */
 .section-heading {
   padding: 0;
+  margin-bottom: 4rem;
 }
 .section-heading span {
   font-weight: 900;
@@ -51,7 +57,7 @@ li {
 nav {
   display: flex;
   justify-content: space-between;
-  margin: 1rem 5%;
+  margin: 2rem 5% 0;
   align-items: center;
 }
 
@@ -61,25 +67,26 @@ nav {
 
 .nav-list {
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
   list-style: none;
   font-family: "Courier New", Courier, monospace;
   font-weight: 500;
 }
 .nav-list a {
   color: #ccd6f6;
+  font-size: 1rem;
   text-decoration: none;
 }
 .nav-list a:hover {
-  color: #8892b0;
-}
-.nav-list span {
   color: #3fa194;
 }
+
 /* End of nav bar */
 
 /* HEADER SECTION */
-
+header {
+  height: 100vh;
+}
 /* banner text */
 .banner-text {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -91,12 +98,15 @@ nav {
 }
 
 .banner-heading {
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-weight: 900;
 }
 
 .intro {
   color: #3fa194;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 500;
+  font-size: 1.1rem;
 }
 .banner-text h1 {
   color: #edeeff;
@@ -117,36 +127,52 @@ nav {
   border-radius: 0.25rem;
   display: inline-block;
   padding: 1rem;
-  margin-top: 4rem;
+  margin-top: 3rem;
   font-weight: 600;
+  align-self: flex-start;
 }
 /* End of banner text */
 
 /* END OF HEADER SECTION*/
 
-/* PROJECTS SECTION */
-
+/* ABOUT ME SECTION */
+.about-me-content {
+  width: 100%;
+}
 .about-me-text {
   color: #8892b0;
+  text-align: justify;
 }
-.about-me-content {
-  display: flex;
-  gap: 4rem;
-  align-items: center;
+.more-about-me {
+  margin-bottom: 1rem;
 }
-.about-me-content img {
+
+.technologies ul {
+  margin: 1rem 0 3rem 0;
+}
+.technologies li {
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 0.7rem;
+  font-size: 0.9rem;
+}
+.about-icon {
+  color: #3fa194;
+  margin-right: 0.5rem;
+}
+.about-image {
+  /* margin: 0 auto; */
+  width: 20rem;
   border-radius: 0.5rem;
 }
+/* END OF ABOUT ME SECTION */
+
+/* PROJECTS SECTION */
 /* /////reusable projects code /////*/
 .project-container {
-  display: flex;
-  border: 1px solid green;
-  height: 25rem;
+  position: relative;
+  background-color: #0d323da2;
 }
-.project-image-container {
-  background-color: #1d4753;
-  max-width: 50%;
-}
+
 .project-image {
   max-width: 100%;
   min-height: 100%;
@@ -154,17 +180,19 @@ nav {
   top: 0;
   left: 0;
   object-fit: fill;
-  opacity: 0.5;
+  opacity: 0.1;
+  position: absolute;
 }
 
 .project-description-container {
   color: #8892b0;
-  text-align: right;
   font-weight: 600;
+  padding: 2rem;
 }
 .featured-project {
   font-family: "Courier New", Courier, monospace;
   color: #3fa194;
+  margin-bottom: 1rem;
 }
 .project-name {
   color: #ccd6f6;
@@ -172,28 +200,72 @@ nav {
   font-weight: 800;
 }
 .project-description {
-  background-color: #112240;
-  padding: 2rem;
+  margin: 2rem 0;
 }
 .project-technologies-list {
   display: flex;
   gap: 2rem;
-  justify-content: end;
+  margin-bottom: 1rem;
   font-family: "Courier New", Courier, monospace;
 }
 
 .project-icon {
   font-size: 1.2rem;
-  margin-left: 2rem;
+  margin-right: 1rem;
 }
-/* FOOTER */
+/* END OF PROJECT SECTION */
+
+/* CONTACTS SECTION */
+.contacts-text {
+  text-align: center;
+}
+.contacts-text h2 {
+  font-size: 2.5rem;
+  color: #ccd6f6;
+  margin-bottom: 1rem;
+}
+.contact-info-container {
+  text-align: left;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  color: #8892b0;
+}
+.contact-info-container i {
+  margin-right: 1rem;
+  color: #3fa194;
+}
+.contact-info-container p {
+  margin-bottom: 1rem;
+}
+.linkedIn {
+  color: #3fa194;
+  border: 2px solid #3fa194;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 50%;
+  margin: 3rem auto 0;
+  display: block;
+}
+/* END OF CONTACTS SECTION */
+
+/* FOOTER SECTION*/
 
 footer {
   background-color: rgb(3, 0, 31);
   text-align: center;
   padding: 0.5rem 0;
 }
+.footer-socials {
+  display: flex;
+  gap: 2rem;
+  color: #ccd6f6;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
 
 footer p {
   color: #ccd6f6;
+  font-size: 0.8rem;
 }
+/* END OF FOOTER SECTION */
