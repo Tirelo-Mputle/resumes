@@ -51,7 +51,24 @@ a {
   color: #ccd6f6;
   font-size: 1.8rem;
 }
+/* BUTTON BREATHING */
+.button-breathe:hover {
+  animation: breathe;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes breathe {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.05;
+  }
+}
 /* /////////////////////// */
+/* End of reusable page-wide classes */
 
 /* nav bar */
 nav {
@@ -271,6 +288,8 @@ footer {
   justify-content: center;
   margin-bottom: 0.5rem;
 }
+
+/* animate footer social icons */
 .linkedIn-icon:hover,
 .github-icon:hover {
   animation: icon-shake;
