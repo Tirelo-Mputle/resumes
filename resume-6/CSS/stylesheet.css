@@ -271,7 +271,28 @@ footer {
   justify-content: center;
   margin-bottom: 0.5rem;
 }
-
+.linkedIn-icon:hover,
+.github-icon:hover {
+  animation: icon-shake;
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  color: #ccd6f6;
+}
+@keyframes icon-shake {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(5deg);
+  }
+  50% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-5deg);
+  }
+}
 footer p {
   color: #ccd6f6;
   font-size: 0.8rem;
