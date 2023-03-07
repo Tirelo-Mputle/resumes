@@ -111,7 +111,13 @@ nav {
 /* End of nav bar */
 
 /* HEADER SECTION */
-
+header {
+  background-color: #0a192f;
+  padding: 5rem 10%;
+  height: 100vh;
+  margin-top: 0;
+  background-image: url("/images/dust-overlay-3.png");
+}
 /* banner text */
 .banner-text {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -186,8 +192,10 @@ nav {
 }
 .about-image {
   /* margin: 0 auto; */
-  width: 20rem;
   border-radius: 0.5rem;
+}
+.about-image-big {
+  width: 20rem;
 }
 /* END OF ABOUT ME SECTION */
 
