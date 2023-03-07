@@ -163,11 +163,25 @@
           <h2>Get In Touch</h2>
           <!-- Contacts text container -->
           <div class="contact-info-container">
-            <!-- Icon and contact information -->
-            <form action="">
+            <!-- contact form -->
+
+            <form
+              action="https://formsubmit.co/c41bc2e6ab72614dc704371252ae5b2e"
+              method="POST"
+            >
               <div>
-                <label for="subject"></label
-                ><select name="subject" id="subject" required>
+                <label for="subject">Subject:</label>
+                <select name="_subject" id="subject">
+                  <option value="Interview opportunity">
+                    Interview opportunity
+                  </option>
+                  <option value="Website review">Website review</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="occupation">Occupation</label
+                ><select name="occupation" id="occupation" required>
                   <option value="Recruiter">Recruiter</option>
                   <option value="HR department">HR department</option>
                   <option value="Fellow software developer">
@@ -188,7 +202,9 @@
                   rows="10"
                 ></textarea>
               </div>
+              <input type="submit" value="Submit" />
             </form>
+            <!-- End of contact form -->
           </div>
           <!-- Linked in "button" link -->
           <a
