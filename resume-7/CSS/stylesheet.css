@@ -113,6 +113,8 @@ nav {
 /* HEADER SECTION */
 header {
   background-color: #0a192f;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 5rem 10%;
   height: 100vh;
   margin-top: 0;
@@ -193,10 +195,11 @@ header {
 .about-image {
   /* margin: 0 auto; */
   border-radius: 0.5rem;
-}
-.about-image-big {
   width: 20rem;
+  height: 20rem;
 }
+/* .about-image-big {
+} */
 /* END OF ABOUT ME SECTION */
 
 /* PROJECTS SECTION */
