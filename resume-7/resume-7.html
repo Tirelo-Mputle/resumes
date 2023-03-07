@@ -169,9 +169,14 @@
               action="https://formsubmit.co/c41bc2e6ab72614dc704371252ae5b2e"
               method="POST"
             >
-              <div>
+              <div class="form-input-container">
                 <label for="subject">Subject:</label>
-                <select name="_subject" id="subject">
+                <select
+                  name="_subject"
+                  id="subject"
+                  class="form-input"
+                  required
+                >
                   <option value="Interview opportunity">
                     Interview opportunity
                   </option>
@@ -179,9 +184,14 @@
                 </select>
               </div>
 
-              <div>
+              <div class="form-input-container">
                 <label for="occupation">Occupation</label
-                ><select name="occupation" id="occupation" required>
+                ><select
+                  name="occupation"
+                  id="occupation"
+                  required
+                  class="form-input"
+                >
                   <option value="Recruiter">Recruiter</option>
                   <option value="HR department">HR department</option>
                   <option value="Fellow software developer">
@@ -189,20 +199,28 @@
                   </option>
                 </select>
               </div>
-              <div>
+
+              <div class="form-input-container">
                 <label for="email">Email</label
-                ><input type="email" name="email" id="email" required />
+                ><input
+                  type="email"
+                  name="email"
+                  id="email"
+                  required
+                  class="form-input"
+                />
               </div>
-              <div>
+              <div class="form-input-container">
                 <label for="comments">Comment:</label
                 ><textarea
                   name="comments"
                   id="comments"
                   cols="30"
                   rows="10"
+                  class="form-input"
                 ></textarea>
               </div>
-              <input type="submit" value="Submit" />
+              <input type="submit" value="Submit" class="submit" />
             </form>
             <!-- End of contact form -->
           </div>
