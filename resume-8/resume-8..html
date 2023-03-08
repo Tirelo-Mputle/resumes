@@ -26,7 +26,7 @@
       src="https://kit.fontawesome.com/b614e5aac1.js"
       crossorigin="anonymous"
     ></script>
-    <title>resume-7.html</title>
+    <title>resume-8.html</title>
   </head>
   <body>
     <!-- Navigation bar -->
@@ -54,7 +54,7 @@
       </a>
     </span>
     <!-- End of back to top icon -->
-    <header class="centered-sections" id="header">
+    <header id="header">
       <!-- Banner information -->
       <div class="banner-text">
         <p class="intro">Hi, my name is</p>
@@ -98,11 +98,28 @@
             </div>
           </div>
           <!-- Personal profile image -->
-          <img
+          <!-- <img
             src="images/Tirelo-profile-image.jpg"
             alt="Tirelo Mputle"
             class="about-image"
-          />
+          /> -->
+          <picture>
+            <source
+              media="(max-width: 600px )"
+              srcset="/images/face.jpg"
+              class="about-image" />
+            <source
+              media="(max-width: 1000px )"
+              srcset="/images/shoulders.jpg"
+              class="about-image" />
+            <img
+              src="/images/Tirelo-profile-image.jpg"
+              alt="Tirelo Mputle"
+              class="about-image about-image-big"
+          /></picture>
+          <!-- <picture><sourcemedia="(max-width: 600px)"  srcset="images/person-on-a-bridge-small.jpg">
+            <sourcemedia="(max-width: 1000px)" srcset="images/person-on-a-bridge-med.jpg">
+            <imgsrc="images/person-on-a-bridge-large.jpg"alt="person on a bridge"></picture> -->
         </div>
       </section>
 
