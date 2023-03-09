@@ -132,10 +132,6 @@ nav {
     padding: 0.7rem 10%;
   }
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> mobile-design
 /* END OF NAV BAR MEDIA QUERIES */
 /* End of nav bar */
 
@@ -280,12 +276,21 @@ header {
   }
 }
 @media screen and (min-width: 768px) {
+  .about-me-content {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+  }
   .shoulder,
   .face {
     display: none;
   }
   .full {
     display: block;
+  }
+  .about-image {
+    max-width: 80%;
+    max-height: 22rem;
   }
 }
 /* END OF ABOUT SECTION MEDIA QUERIES */
