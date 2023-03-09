@@ -1,7 +1,7 @@
 /* COLORS USED:
 main-dark-blue: #0a192f
 dark-gray: #8892B0;
-light-gray: #CCD6F6;
+light-gray: #1D4753;
 light-blue: #3FA194;
 projects-overlay: #1D4753;
 project-descriptions: #112240*/
@@ -366,16 +366,18 @@ header {
 
 /* CONTACTS SECTION */
 .contacts-text {
-  text-align: center;
+  max-width: 40rem;
+  margin: 0 auto;
 }
 .contacts-text h2 {
-  font-size: 2.5rem;
+  font-size: 1.7rem;
   color: #ccd6f6;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  max-width: 15rem;
 }
 .contact-info-container {
   text-align: left;
-  width: 80%;
+  /* width: 80%; */
   margin: 0 auto;
   margin-bottom: 2rem;
   color: #8892b0;
@@ -387,40 +389,65 @@ header {
 .contact-info-container p {
   margin-bottom: 1rem;
 }
-.linkedIn {
-  color: #3fa194;
-  border: 2px solid #3fa194;
-  border-radius: 0.5rem;
-  padding: 1rem;
-  width: 50%;
-  margin: 3rem auto 0;
-  display: block;
-}
 
 /* contact form */
 form {
   width: 100%;
+
   text-align: center;
+  border-radius: 0.5rem;
+  padding: 2rem 2rem;
+  background-color: #000d21;
+  color: white;
 }
-.form-input {
-  width: 50%;
+label {
+  font-weight: 600;
 }
+
 .form-input-container {
   display: flex;
+  flex-direction: column;
   width: 100%;
-  gap: 3rem;
-
-  margin-bottom: 1rem;
-  justify-content: space-between;
+  gap: 1rem;
+  align-items: flex-start;
+  margin-bottom: 2rem;
 }
+.form-input {
+  width: 100%;
+  min-height: 48px;
+  border-radius: 0.3rem;
+  padding: 0.3rem 1rem;
+  background-color: #2d3747;
+  color: white;
+  font-size: 0.9rem;
+}
+
 .submit {
   margin-top: 2rem;
   padding: 1rem 3rem;
   border-radius: 0.25rem;
   font-size: 1.2rem;
+  background-color: #2d3747;
+  color: white;
+}
+.submit:hover {
+  background-color: #2b6860;
 }
 /* End of contact form */
-
+/*CONTACTS MEDIA QUERIES  */
+@media screen and (min-width: 768px) {
+  .form-name-surname {
+    display: flex;
+    gap: 2rem;
+  }
+  .contacts-text h2 {
+    font-size: 2.5rem;
+  }
+  .form-input {
+    font-size: 1rem;
+  }
+}
+/* END OF CONTACTS MEDIA QUERIES */
 /* END OF CONTACTS SECTION */
 
 /* FOOTER SECTION*/
