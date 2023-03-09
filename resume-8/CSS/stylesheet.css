@@ -34,7 +34,7 @@ a {
   padding-bottom: 10rem;
   width: 80%;
   margin: 0 auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 /* SECTION HEADINGS */
 .section-heading {
@@ -239,7 +239,7 @@ header {
 }
 .about-me-content {
   width: 100%;
-  border: 1px solid red;
+
   text-align: center;
 }
 .about-me-text {
@@ -283,11 +283,6 @@ header {
   }
 }
 @media screen and (min-width: 768px) {
-  .about-me-content {
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-  }
   .shoulder,
   .face {
     display: none;
@@ -298,6 +293,22 @@ header {
   .about-image {
     max-width: 80%;
     max-height: 22rem;
+  }
+  .about-me-content {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about-me-content {
+    display: flex;
+
+    align-items: center;
+    gap: 3rem;
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+  .technologies li {
+    font-size: 1rem;
   }
 }
 /* END OF ABOUT SECTION MEDIA QUERIES */
@@ -455,14 +466,16 @@ label {
 footer {
   background-color: rgb(3, 0, 31);
   text-align: center;
-  padding: 0.5rem 0;
+  padding: 1rem 0;
 }
 .footer-socials {
   display: flex;
   gap: 2rem;
-  color: #ccd6f6;
   justify-content: center;
   margin-bottom: 0.5rem;
+}
+.footer-socials a {
+  color: white;
 }
 
 /* animate footer social icons */
@@ -492,4 +505,11 @@ footer p {
   color: #ccd6f6;
   font-size: 0.8rem;
 }
+/*FOOTER MEDIA QUERIES  */
+@media screen and (min-width: 768px) {
+  footer p {
+    font-size: 0.9rem;
+  }
+}
+/* END OF FOOTER MEDIA QUERIES */
 /* END OF FOOTER SECTION */
