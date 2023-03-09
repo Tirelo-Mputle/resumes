@@ -73,6 +73,13 @@ a {
   .centered-sections {
     width: 60%;
   }
+  .section-heading span {
+    font-size: 1.8rem;
+  }
+  .section-heading h2 {
+    font-size: 2rem;
+    font-weight: 700;
+  }
 }
 /* End of reusable page-wide classes */
 
@@ -343,6 +350,18 @@ header {
   font-size: 1.2rem;
   margin-right: 1rem;
 }
+
+/*  PROJECT SECTION MEDIA QUERIES*/
+@media screen and (min-width: 768px) {
+  .project-container {
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+  .project-description {
+    max-width: 80%;
+  }
+}
+/* END OF PROJECT SECTION MEDIA QUERIES */
 /* END OF PROJECT SECTION */
 
 /* CONTACTS SECTION */
