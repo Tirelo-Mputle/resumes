@@ -34,7 +34,7 @@ a {
   padding-bottom: 10rem;
   width: 80%;
   margin: 0 auto;
-  /* border: 1px solid red; */
+  border: 1px solid red;
 }
 /* SECTION HEADINGS */
 .section-heading {
@@ -68,7 +68,12 @@ a {
     scale: 1.05;
   }
 }
-/* /////////////////////// */
+/* REUSABLE CODE MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+  .centered-sections {
+    width: 60%;
+  }
+}
 /* End of reusable page-wide classes */
 
 /* nav bar */
@@ -84,7 +89,7 @@ nav {
 }
 
 .logo {
-  width: 2rem;
+  width: 1.3rem;
 }
 
 .nav-list {
@@ -96,7 +101,8 @@ nav {
 }
 .nav-list a {
   color: #ccd6f6;
-  font-size: 0.85rem;
+
+  font-size: 0.65rem;
   text-decoration: none;
 }
 .nav-list a:hover {
@@ -109,6 +115,24 @@ nav {
   color: #ccd6f6;
   font-size: 1.5rem;
 }
+/* NAV BAR MEDIA QUERIES */
+@media screen and (min-width: 425px) {
+  .nav-list a {
+    font-size: 0.9rem;
+  }
+  .logo {
+    width: 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav-list a {
+    font-size: 1rem;
+  }
+  nav {
+    padding: 0.7rem 10%;
+  }
+}
+/* END OF NAV BAR MEDIA QUERIES */
 /* End of nav bar */
 
 /* HEADER SECTION */
@@ -116,7 +140,7 @@ header {
   background-color: #0a192f;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 3rem 10% 5rem;
+  padding: 5rem 10% 5rem;
   height: 100vh;
   margin-top: 0;
   background-image: url("/images/dust-overlay-3.png");
@@ -132,7 +156,7 @@ header {
 }
 
 .banner-heading {
-  font-size: 2.7rem;
+  font-size: 2.1rem;
   font-weight: 900;
 }
 
@@ -140,7 +164,7 @@ header {
   color: #3fa194;
   font-family: "Courier New", Courier, monospace;
   font-weight: 500;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
 }
 .banner-text h1 {
   color: #edeeff;
@@ -150,7 +174,8 @@ header {
   color: #8892b0;
 }
 .short-summary {
-  line-height: 1.5rem;
+  line-height: 1.3;
+  font-size: 0.9rem;
 }
 .banner-text a {
   color: #3fa194;
@@ -160,13 +185,45 @@ header {
   border: 2px solid #3fa194;
   border-radius: 0.25rem;
   display: inline-block;
+  font-size: 0.9rem;
   padding: 1rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
   font-weight: 600;
   align-self: flex-start;
 }
 /* End of banner text */
 
+/* HEADER SECTION MEDIA QUERIES */
+@media screen and (min-width: 425px) {
+  .intro {
+    font-size: 1rem;
+  }
+  .banner-heading {
+    font-size: 2.5rem;
+  }
+  .short-summary {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+@media screen and (min-width: 768px) {
+  .intro {
+    font-size: 1.2rem;
+  }
+  .short-summary {
+    width: 70%;
+    font-size: 1.2rem;
+  }
+
+  .banner-heading {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .projects-link {
+    font-size: 1.2rem;
+  }
+}
+/* END OF HEADER SECTION MEDIA QUERIES */
 /* END OF HEADER SECTION*/
 
 /* ABOUT ME SECTION */
@@ -175,7 +232,7 @@ header {
 }
 .about-me-content {
   width: 100%;
-
+  border: 1px solid red;
   text-align: center;
 }
 .about-me-text {
@@ -198,16 +255,14 @@ header {
   color: #3fa194;
   margin-right: 0.5rem;
 }
-picture {
-  display: flex;
-  justify-content: space-between;
-}
+
 .about-image {
   border-radius: 0.5rem;
   margin: 0 auto;
   max-width: 60%;
   max-height: 20rem;
 }
+/* ABOUT SECTION MEDIA QUERIES */
 @media screen and (max-width: 425px) {
   .full,
   .shoulder {
@@ -229,8 +284,7 @@ picture {
     display: block;
   }
 }
-/* .about-image-big {
-} */
+/* END OF ABOUT SECTION MEDIA QUERIES */
 /* END OF ABOUT ME SECTION */
 
 /* PROJECTS SECTION */
