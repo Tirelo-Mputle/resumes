@@ -84,7 +84,7 @@ nav {
 }
 
 .logo {
-  width: 2rem;
+  width: 1.3rem;
 }
 
 .nav-list {
@@ -96,7 +96,8 @@ nav {
 }
 .nav-list a {
   color: #ccd6f6;
-  font-size: 0.85rem;
+
+  font-size: 0.65rem;
   text-decoration: none;
 }
 .nav-list a:hover {
@@ -109,6 +110,25 @@ nav {
   color: #ccd6f6;
   font-size: 1.5rem;
 }
+/* NAV BAR MEDIA QUERIES */
+@media screen and (min-width: 425px) {
+  .nav-list a {
+    font-size: 0.9rem;
+  }
+  .logo {
+    width: 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav-list a {
+    font-size: 1rem;
+  }
+  nav {
+    padding: 0.7rem 10%;
+  }
+}
+
+/* END OF NAV BAR MEDIA QUERIES */
 /* End of nav bar */
 
 /* HEADER SECTION */
@@ -175,7 +195,7 @@ header {
 }
 .about-me-content {
   width: 100%;
-
+  border: 1px solid red;
   text-align: center;
 }
 .about-me-text {
@@ -198,16 +218,14 @@ header {
   color: #3fa194;
   margin-right: 0.5rem;
 }
-picture {
-  display: flex;
-  justify-content: space-between;
-}
+
 .about-image {
   border-radius: 0.5rem;
   margin: 0 auto;
   max-width: 60%;
   max-height: 20rem;
 }
+/* ABOUT SECTION MEDIA QUERIES */
 @media screen and (max-width: 425px) {
   .full,
   .shoulder {
@@ -229,8 +247,7 @@ picture {
     display: block;
   }
 }
-/* .about-image-big {
-} */
+/* END OF ABOUT SECTION MEDIA QUERIES */
 /* END OF ABOUT ME SECTION */
 
 /* PROJECTS SECTION */
