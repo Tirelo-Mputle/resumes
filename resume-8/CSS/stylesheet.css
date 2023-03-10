@@ -100,8 +100,8 @@ nav {
 }
 
 .nav-list {
-  display: flex;
-  gap: 1rem;
+  /* display: flex;
+  gap: 1rem; */
   list-style: none;
   font-family: "Courier New", Courier, monospace;
   font-weight: 500;
@@ -109,10 +109,13 @@ nav {
 .nav-list a {
   color: #ccd6f6;
 
-  font-size: 0.65rem;
+  font-size: 0.7rem;
   text-decoration: none;
 }
 .nav-list a:hover {
+  color: #3fa194;
+}
+.nav-list span {
   color: #3fa194;
 }
 .back-to-top {
@@ -123,12 +126,18 @@ nav {
   font-size: 1.5rem;
 }
 /* NAV BAR MEDIA QUERIES */
+
 @media screen and (min-width: 425px) {
-  .nav-list a {
-    font-size: 0.9rem;
+  .nav-list {
+    display: flex;
+    gap: 0.3rem;
   }
+  .nav-list a {
+    font-size: 0.6rem;
+  }
+
   .logo {
-    width: 2rem;
+    width: 1rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -137,6 +146,9 @@ nav {
   }
   nav {
     padding: 0.7rem 10%;
+  }
+  .nav-list {
+    gap: 0.5rem;
   }
 }
 /* END OF NAV BAR MEDIA QUERIES */
