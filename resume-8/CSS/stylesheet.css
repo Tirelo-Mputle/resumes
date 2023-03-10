@@ -375,29 +375,48 @@ header {
 /* END OF PROJECT SECTION MEDIA QUERIES */
 /* END OF PROJECT SECTION */
 
-/* EXPERIENCE SECTION */
-.experience-container {
+/* EXPERIENCE AND EDUCATION SECTION */
+.experience-container,
+.education-container {
   color: #8892b0;
 }
-.job-title {
+.job-title,
+.education-level {
   color: #ccd6f6;
   font-size: 1.2rem;
   font-weight: 600;
-}
-.employer,
-.dates {
-  font-family: "Courier New", Courier, monospace;
-}
-.job-details p {
   margin-bottom: 0.5rem;
 }
+.employer,
+.dates,
+.school {
+  font-family: "Courier New", Courier, monospace;
+}
+/* .job-details p {
+  margin-bottom: 0.5rem;
+} */
 .tasks {
   margin-top: 2rem;
 }
+.task,
+.education-description {
+  margin-bottom: 1rem;
+}
 .job-task-icon {
   margin-right: 0.5rem;
+  color: #3fa194;
 }
-/* END OF EXPERIENCE SECTION */
+
+/* EXPERIENCE AND EDUCATION MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+  .experience-container,
+  .education-container {
+    max-width: 40rem;
+    margin: 0 auto;
+  }
+}
+/* END OF EXPERIENCE AND EDUCATION MEDIA QUERIES */
+/* END OF EXPERIENCE AND EDUCATION SECTION */
 
 /* CONTACTS SECTION */
 .contacts-text {
